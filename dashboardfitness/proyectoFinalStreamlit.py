@@ -7,7 +7,7 @@ st.set_page_config(layout="wide", page_title="Fitness Dashboard")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('dailyActivity_merged.csv')
+    df = pd.read_csv('dashboardfitness/data/dailyActivity_merged.csv')
     df['ActivityDate'] = pd.to_datetime(df['ActivityDate'])
     return df
 
